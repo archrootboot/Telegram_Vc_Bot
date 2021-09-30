@@ -12,8 +12,8 @@ async def start(_, message: Message):
             [[
             InlineKeyboardButton("➕ Add To Your Group ➕", url=addbname)
             ],[
-            InlineKeyboardButton("💬 Group", url="https://t.me/BotMusics"),
-            InlineKeyboardButton("Commands 🛠", url="https://telegra.ph/Music-Bot-05-07")
+            InlineKeyboardButton("SL MUSIC ZONE", url="https://t.me/SLMUSICZONE1"),
+            InlineKeyboardButton("DMG-X", url="https://t.me/Dark_music_Gangex_2021")
             ]]
         ),
         disable_web_page_preview=True
