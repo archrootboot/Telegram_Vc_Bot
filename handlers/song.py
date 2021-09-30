@@ -238,7 +238,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.command(["vsong", "vid"]))
+@Client.on_message(filters.command(["vsong", "video"]))
 async def ytmusic(client,message: Message):
     global is_downloading
     if is_downloading:
@@ -285,9 +285,9 @@ async def ytmusic(client,message: Message):
             infoo = ytdl.extract_info(url, False)
             duration = round(infoo["duration"] / 60)
 
-            if duration > 8:
+            if duration > 100:
                 await pablo.edit(
-                    f"❌ Videos longer than 8 minute(s) aren't allowed, the provided video is {duration} minute(s)"
+                    f"❌ Videos longer than 100 minute(s) aren't allowed, the provided video is {duration} minute(s)"
                 )
                 is_downloading = False
                 return
